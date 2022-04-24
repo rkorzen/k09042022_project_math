@@ -22,3 +22,14 @@ class TestSub:
     def test_sub_exception(self):
         with pytest.raises(ValueError):
             algebra.sub(1, 1.0)
+
+
+class TestSquareRootsOfQuadraticeEquation:
+    def test_two_square_roots(self):
+        assert algebra.square_roots(1, 0, -1) == [-1, 1]
+
+    def test_one_square_root(self):
+        assert algebra.square_roots(1, 0, 0) == [0]
+
+    def test_zero_square_roots(self):
+        assert algebra.square_roots(1, 0, 1) == []
