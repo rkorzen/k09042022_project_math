@@ -12,3 +12,13 @@ class TestAdd:
     def test_add_exception(self):
         with pytest.raises(ValueError):
             algebra.add(1, 2.0)
+
+
+class TestSub:
+    def test_sub_two_ints(self):
+        assert algebra.sub(1, 2) == -1
+        assert algebra.sub(1, -2) == 3
+
+    def test_sub_exception(self):
+        with pytest.raises(ValueError):
+            algebra.sub(1, 1.0)
