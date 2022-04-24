@@ -27,7 +27,9 @@ class TestSub:
 class TestSquareRootsOfQuadraticeEquation:
     def test_two_square_roots(self):
         assert algebra.square_roots(1, 0, -1) == [-1, 1]
+        assert algebra.square_roots(1, 1, 0) == [0, 1]
 
+    # TODO: add other examples
     def test_one_square_root(self):
         assert algebra.square_roots(1, 0, 0) == [0]
 
