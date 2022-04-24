@@ -9,5 +9,12 @@ def add(a: int, b: int, *args: int) -> int:
     return sum(elements)
 
 
+def sub(a: int, b: int) -> int:
+    check_all_elements_are_has_same_type([a, b])
+    return a - b
+
+
 if __name__ == "__main__":
-    add(1, 1.0)
+    a, b = 1, 1.0
+
+    add(a, b)
